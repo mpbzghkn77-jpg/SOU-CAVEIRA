@@ -1,0 +1,29 @@
+{
+  "title": "Conteúdo PMPE / AOCP",
+  "topics": [
+    {
+      "title": "Língua Portuguesa",
+      "description": "Interpretação de texto, ortografia, gramática, pontuação, sintaxe e semântica."
+    },
+    {
+      "title": "Raciocínio Lógico",
+      "description": "Lógica proposicional, sequências, análise de premissas, tabelas-verdade e problemas matemáticos."
+    },
+    {
+      "title": "Matemática",
+      "description": "Operações básicas, porcentagem, regra de três, geometria, análise de dados e álgebra."
+    },
+    {
+      "title": "Informática",
+      "description": "Windows, internet, pacote Office, redes, segurança, navegadores e conceitos digitais."
+    },
+    {
+      "title": "Legislação e Constituição",
+      "description": "Constituição Federal, direito administrativo, direitos e deveres, organização do Estado e cidadania."
+    },
+    {
+      "title": "Atualidades e PMPE",
+      "description": "Política, segurança pública, Pernambuco, gestão pública, legislação e temas do contexto atual."
+    }
+  ]
+}

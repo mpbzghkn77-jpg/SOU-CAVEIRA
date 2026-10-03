@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMPE | AOCP Prep</title>
+    <meta name="theme-color" content="#061a2d" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Preparação PMPE</p>
+          <h1>PMPE | AOCP PREP</h1>
+        </div>
+        <div class="header-actions">
+          <button id="homeBtn" class="ghost-btn">Início</button>
+        </div>
+      </header>
+
+      <main>
+        <section id="homeView" class="panel">
+          <div class="hero">
+            <h2>Treinamento focado no concurso PMPE</h2>
+            <p>
+              Simulados, revisão por assunto, análise de desempenho e banco de
+              questões estruturado para a banca AOCP.
+            </p>
+          </div>
+
+          <div class="control-row">
+            <label class="select-wrap">
+              <span>Disciplina</span>
+              <select id="categoryFilter">
+                <option value="Todos">Todos</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="editalContainer" class="edital"></div>
+
+          <div class="actions">
+            <button id="startBtn" class="primary-btn">Iniciar simulado</button>
+          </div>
+        </section>
+
+        <section id="quizView" class="panel hidden">
+          <div class="quiz-header">
+            <div class="progress-wrap">
+              <span id="progressText">Questão 1/1</span>
+              <div class="progress-bar">
+                <div id="progressFill"></div>
+              </div>
+            </div>
+
+            <div class="stats-box">
+              <span>Acertos</span>
+              <strong id="scoreValue">0</strong>
+            </div>
+
+            <div class="timer-box">
+              <span>Tempo</span>
+              <strong id="timerValue">30:00</strong>
+            </div>
+          </div>
+
+          <article class="question-card">
+            <p id="questionCategory" class="category-tag"></p>
+            <h3 id="questionText"></h3>
+            <div id="answersContainer" class="answers"></div>
+          </article>
+
+          <div class="quiz-actions">
+            <button id="prevBtn" class="ghost-btn">Anterior</button>
+            <button id="nextBtn" class="primary-btn">Próxima</button>
+          </div>
+        </section>
+
+        <section id="resultView" class="panel hidden">
+          <div class="results-card">
+            <p class="eyebrow">Resultado final</p>
+            <h2 id="resultTitle">Simulado concluído</h2>
+
+            <div class="score-result">
+              <strong id="finalScore">0</strong>
+              <span>acertos</span>
+            </div>
+
+            <div class="stats-grid">
+              <div class="mini-stat">
+                <span>Total</span>
+                <strong id="totalAnswered">0</strong>
+              </div>
+              <div class="mini-stat">
+                <span>Erro</span>
+                <strong id="totalErrors">0</strong>
+              </div>
+              <div class="mini-stat">
+                <span>%</span>
+                <strong id="percentResult">0%</strong>
+              </div>
+            </div>
+
+            <ul id="resultSummary" class="summary-list"></ul>
+
+            <button id="againBtn" class="primary-btn">Fazer novamente</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "PMPE | AOCP Prep",
+  "short_name": "PMPE",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#061a2d",
+  "theme_color": "#071b2f",
+  "description": "Aplicativo de estudo para preparação ao concurso PMPE com foco na banca AOCP",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192/071b2f/4ecdc4?text=PM",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512/071b2f/4ecdc4?text=PM",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
