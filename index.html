@@ -30,13 +30,38 @@
             </p>
           </div>
 
-          <div class="control-row">
+          <div class="filters-row">
             <label class="select-wrap">
               <span>Disciplina</span>
               <select id="categoryFilter">
                 <option value="Todos">Todos</option>
               </select>
             </label>
+
+            <label class="select-wrap">
+              <span>Dificuldade</span>
+              <select id="difficultyFilter">
+                <option value="Todos">Todos</option>
+                <option value="Fácil">Fácil</option>
+                <option value="Médio">Médio</option>
+                <option value="Difícil">Difícil</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="summary-board">
+            <div class="summary-box">
+              <span>Total de questões</span>
+              <strong id="totalQuestionsLabel">0</strong>
+            </div>
+            <div class="summary-box">
+              <span>Melhor percentual</span>
+              <strong id="bestScoreLabel">0%</strong>
+            </div>
+            <div class="summary-box">
+              <span>Último simulado</span>
+              <strong id="lastScoreLabel">0%</strong>
+            </div>
           </div>
 
           <div id="editalContainer" class="edital"></div>
@@ -104,6 +129,11 @@
             </div>
 
             <ul id="resultSummary" class="summary-list"></ul>
+
+            <div class="history-panel">
+              <h3>Histórico</h3>
+              <ul id="historyList" class="history-list"></ul>
+            </div>
 
             <button id="againBtn" class="primary-btn">Fazer novamente</button>
           </div>
